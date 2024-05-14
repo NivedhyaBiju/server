@@ -1,0 +1,62 @@
+server creation
+---------------
+
+1. create a new folder for server
+ server - node - express - for real server
+                 - json - server - act as fake server
+
+ npm - node modules
+       - package.json
+
+2. create package.json file in node server
+   command - npm init
+
+3. install json server - npm i json-server@0.17.4
+
+API request
+-----------
+
+1. add video - (title, cover image url, video url) - post
+
+     ---------------------------------------------------
+     |                      |                          |
+     |      HEADER          |           BODY           |
+     |                      |                          |
+     ---------------------------------------------------
+                               JSON
+
+access videos - get
+
+2. add new category - category name - post
+access categories - get
+darg and drop - update category
+add history - (date & time, title, videoUrl) post
+access histories - get
+video delete - id - delete
+category delete - id - delete
+history delete - id - delete
+
+
+for importing we have 2 options
+-------------------------------
+
+1. import - provide top of the file, can't place in anywhere
+2. require - we can place it in anywhere in a file
+
+CORS (cross origin resource sharing)
+-----------------------------------
+
+>>> library used to connect front-end with server
+>>> command - npm i cors
+
+data conversion (json-js) before resolving each api request
+
+Middlewares - have capability to control totally request coming in server
+-----------
+types :- 1. application specific middleware - apply middleware in application bcoz all request in server need the middleware 
+         2. Router specific middleware - apply middleware for specific request that nees middleware
+----------------------------------------------------------------------------------------------------------------------------
+
+nodemon - provide automatic recombilation
+
+command for install nodemon - npm i -g nodemon
